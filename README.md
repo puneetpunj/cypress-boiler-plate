@@ -51,7 +51,7 @@ npx cypress run --spec "cypress/integration/mytests/jetstar.spec.js,cypress/int
 Use below command to run locally. This is a custom shell file with commands to run specific or all spec files and generate mochawesome report.
 
 ```bash
-cypressrunner.sh
+npm run execute-tests
 ```
 
 #### Screenshots
