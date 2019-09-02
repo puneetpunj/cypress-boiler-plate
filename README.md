@@ -178,3 +178,11 @@ Execute cypress tests using
 ```bash
 percy exec -- cypress run
 ```
+
+### Destroy Docker Containers and Images
+
+```bash
+sh destroy-containers and images.sh
+```
+
+This is to destory all the Docker images and containers conveniently. it is not specially related to cypress framework but useful to manage docker images/containers
