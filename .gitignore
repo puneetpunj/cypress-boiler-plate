@@ -1,0 +1,4 @@
+/node_modules
+/execution-report/*
+/cypress/screenshots
+/cypress/videos
