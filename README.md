@@ -4,7 +4,7 @@ cypress framework with docker, percy integration and inbuilt mochawesome reporti
 
 ### Prerequisite
 
-Nodejs >8 must be installed
+Nodejs >8 must be installed (if not using docker)
 
 ## Installation
 
@@ -57,10 +57,12 @@ npm run execute-tests
 #### Screenshots
 
 Cypress automatically takes screenshot on every failure. But this can be turned off using cypress.json configuration (`jsscreenshotOnRunFailure: false`)
+Screenshots will be saved automated at cypress/screenshots directory
 
 #### Video Recording
 
 Headless execution automatically store the video of execution (`jsvideoUploadOnPasses=false`)
+Videos will be saved automated at cypress/videos directory
 
 #### Reporting
 
