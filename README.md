@@ -64,6 +64,10 @@ Screenshots will be saved automated at cypress/screenshots directory
 Headless execution automatically store the video of execution (`jsvideoUploadOnPasses=false`)
 Videos will be saved automated at cypress/videos directory
 
+<p>
+    <img src="/images/Video recording.png"/>
+</p>
+
 #### Reporting
 
 All mocha specific reports are available in Cypress. To list few :
@@ -74,6 +78,10 @@ All mocha specific reports are available in Cypress. To list few :
 
 This framework is setup to generate mochawesome report but can be enahnced to add other report types, as needed.
 
+<p>
+    <img src="/images/report snapshot.png"/>
+</p>
+
 ## Cypress Dashboard
 
 The Cypress Dashboard is a service that gives you access to recorded tests - typically when running Cypress tests from your CI provider.
@@ -81,6 +89,10 @@ The Cypress Dashboard is a service that gives you access to recorded tests - t
 The Dashboard provides you insight into what happened when your tests ran.
 
 More details on Cypress Website - [Cypress Dashboard Features](https://docs.cypress.io/guides/dashboard/introduction.html#Features)
+
+<p>
+    <img src="/images/Cypress Dashboard.png"/>
+</p>
 
 ### Record Execution
 
@@ -99,7 +111,9 @@ npx cypress run --record --key 3d09d5fa-3166-47ed-9ae4-9569c17eff74 --spec "cyp
 - Execute test using above "Record Execution" option
 - Once execution result is posted to Cypress Dashboard, it would be synched with git commit in near real time
 
-[GitHub Commit Snapshot](/images/github snapshot.png)
+<p>
+    <img src="/images/github-snapshot.png"/>
+</p>
 
 ## CICD Integration
 
