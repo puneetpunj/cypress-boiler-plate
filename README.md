@@ -99,6 +99,8 @@ npx cypress run --record --key 3d09d5fa-3166-47ed-9ae4-9569c17eff74 --spec "cyp
 - Execute test using above "Record Execution" option
 - Once execution result is posted to Cypress Dashboard, it would be synched with git commit in near real time
 
+[GitHub Commit Snapshot](/images/github snapshot.png)
+
 ## CICD Integration
 
 dockerfile is added in the framework
