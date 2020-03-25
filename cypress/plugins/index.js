@@ -10,7 +10,6 @@
 
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
-require('cypress-dark')
 let percyHealthCheck = require('@percy/cypress/task');
 
 module.exports = (on, config) => {

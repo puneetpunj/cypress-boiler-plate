@@ -14,10 +14,8 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
+require('cypress-dark/src/halloween')
 import './commands'
-// require('cypress-dark/src/halloween')
-// require('cypress-dark')
-
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
