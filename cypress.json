@@ -1,8 +1,10 @@
 {
-  "projectId": "rfnvef",
+  "projectId": "ouk63g",
+  "screenshotsFolder": "screenshots",
+  "videosFolder": "videos",
   "reporter": "mochawesome",
   "reporterOptions": {
-    "reportDir": "cypress/reports/mochawesome-report",
+    "reportDir": "reports/mochawesome-report",
     "overwrite": false,
     "html": false,
     "json": true

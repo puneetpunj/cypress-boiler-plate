@@ -1,15 +1,11 @@
 FROM cypress/browsers:chrome67
 
+RUN npm i cypress
 COPY package.json .
-RUN npm install cypress --unsafe-perm=true --allow-root
 RUN npm i
 
+RUN mkdir -p mnt
 
-COPY cypress.json .
-COPY cypressrunner.sh cypressrunner.sh
-COPY execution-report execution-report
+COPY . mnt/
 
-# RUN $(npm bin)/cypress
-
-CMD npm run execute-tests
-# CMD  ls -la
+CMD cd mnt && npm run cy:run
