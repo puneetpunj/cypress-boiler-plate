@@ -1,4 +1,4 @@
-# cyress-test-framework
+# cypress-boiler-plate
 
 cypress framework with docker, percy integration and inbuilt mochawesome reporting
 
@@ -134,9 +134,9 @@ Sample Code -
 
 ```js
 cy.server();
-cy.route("/en-AU/apiservices/flightschedulev2/getflightschedules", [
-  { id: 1, name: "Pat" }
-]).as("getFlightSchedules");
+cy.route('/en-AU/apiservices/flightschedulev2/getflightschedules', [
+  { id: 1, name: 'Pat' }
+]).as('getFlightSchedules');
 ```
 
 - cy.server is to create a mock server
@@ -160,16 +160,16 @@ Cypress Configuration
 Add below code in cypress/support/command.js
 
 ```js
-import "@percy/cypress";
+import '@percy/cypress';
 ```
 
 In cypress/plugins/index.js
 
 ```js
-let percyHealthCheck = require("@percy/cypress/task");
+let percyHealthCheck = require('@percy/cypress/task');
 
 module.exports = (on, config) => {
-  on("task", percyHealthCheck);
+  on('task', percyHealthCheck);
 };
 ```
 
@@ -185,7 +185,7 @@ Capture Screenshot
 Go to respective test and add below code for screenshot capture and percy's comparison
 
 ```js
-cy.percySnapshot("jetstar home page");
+cy.percySnapshot('jetstar home page');
 ```
 
 Note: change the snapshot name and it must be unique for every screenshot
