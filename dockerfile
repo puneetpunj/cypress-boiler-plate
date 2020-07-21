@@ -1,4 +1,4 @@
-FROM cypress/browsers:chrome67
+FROM cypress/browsers:node12.14.1-chrome83-ff77
 
 RUN npm i cypress
 COPY package.json .
