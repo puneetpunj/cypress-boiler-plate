@@ -23,8 +23,6 @@ jobs:
       - name: Copy test execution videos and screenshots
         run: |
           mkdir public
-          cp -r videos public/videos
-          cp -r screenshots public/screenshots
 
       - name: Merge test reports
         run: npm run combine:report
