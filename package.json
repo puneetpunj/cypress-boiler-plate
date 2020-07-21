@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cy:run": "sh cy-runner.sh",
-    "test:chrome": "cypress run --browser chrome",
+    "test:chrome": "cypress run --browser chrome --spec cypress/integration/examples/location.spec.js,cypress/integration/examples/aliasing.spec.js",
     "combine:report": "mochawesome-merge ./mochawesome-report/*.json -o index.json",
     "generate:report": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
   },
