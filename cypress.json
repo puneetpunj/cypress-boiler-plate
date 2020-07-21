@@ -4,7 +4,6 @@
   "videosFolder": "videos",
   "reporter": "mochawesome",
   "reporterOptions": {
-    "reportDir": "reports/mochawesome-report",
     "overwrite": false,
     "html": false,
     "json": true
