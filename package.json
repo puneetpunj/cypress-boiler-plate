@@ -4,7 +4,10 @@
   "description": "implementation of cypress framework for UI validations and Percy for Visual Testing",
   "main": "index.js",
   "scripts": {
-    "cy:run": "sh cy-runner.sh"
+    "cy:run": "sh cy-runner.sh",
+    "test:chrome": "cypress run --browser chrome",
+    "combine:report": "mochawesome-merge ./mochawesome-report/*.json -o index.json",
+    "generate:report": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
   },
   "keywords": [],
   "author": "",
